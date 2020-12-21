@@ -1,0 +1,26 @@
+ENTREGAR TESTBENCH.
+
+Descrição do trabalho:
+	Entrega: 27/11.
+	Fazer uma tabela de controle ampliada, para os próximos componentes. Sinais que vão ser enviados para o caminho de dados, vai ter que controlar mux, cada coisa. Pegar as instruções (que ficam dentro da ROM). 
+	Fazer ela somar, subtrair e fazer as operações e salvar na memória ROM.
+	Caminho de controle pega o OP_code e faz o que tem que fazer.
+	ROM sem clock para facilitar.
+	Validação no simulador (MODELSIM).
+	Fazer o código da ROM e o 7 segmentos.
+	Busca a instrução na ROM, identifica e vai pro caminho de dados.
+
+Requisitos funcionais e não funcionais:
+Tem momória rom interna, deve ser programada internamento
+Mostrar no caminho de dados o resultado da ULA
+Trabalhar com 16 bits.
+
+	Carrega um imediato, carrega o outro, soma e dá o resultado.
+
+Fluxogramas/processos:
+
+
+Máquina de estados:
+Não precisa desenhar a máquina de estados porque ela já está pronta
+
+Blocos funcionais:
