@@ -1,0 +1,61 @@
+|SM
+i_btn_rst => w_we.IN0
+i_btn_dec => Selector1.IN1
+i_btn_dec => w_we.DATAIN
+i_btn_dec => w_we.IN1
+i_btn_dec => state.st_inc.OUTPUTSELECT
+i_btn_dec => state.st_idle.OUTPUTSELECT
+i_btn_dec => w_addr[0].OUTPUTSELECT
+i_btn_dec => w_addr[1].OUTPUTSELECT
+i_btn_dec => w_addr[2].OUTPUTSELECT
+i_btn_dec => w_addr[3].OUTPUTSELECT
+i_btn_dec => Selector0.IN0
+i_btn_inc => Selector1.IN2
+i_btn_inc => state.st_idle.DATAA
+i_btn_inc => w_we.IN1
+i_btn_inc => w_addr[0].OUTPUTSELECT
+i_btn_inc => w_addr[1].OUTPUTSELECT
+i_btn_inc => w_addr[2].OUTPUTSELECT
+i_btn_inc => w_addr[3].OUTPUTSELECT
+i_btn_inc => state.st_inc.DATAA
+o_7seg[0] <= o_7seg[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_7seg[1] <= o_7seg[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_7seg[2] <= o_7seg[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_7seg[3] <= o_7seg[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_7seg[4] <= o_7seg[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_7seg[5] <= o_7seg[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_7seg[6] <= o_7seg[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_7seg[7] <= <VCC>
+
+
+|SM|single_port_ram:MM0
+i_addr[0] => ram~1.DATAIN
+i_addr[0] => ram.WADDR
+i_addr[0] => ram.RADDR
+i_addr[1] => ram~0.DATAIN
+i_addr[1] => ram.WADDR1
+i_addr[1] => ram.RADDR1
+i_addr[2] => ~NO_FANOUT~
+i_addr[3] => ~NO_FANOUT~
+i_data[0] => ram~5.DATAIN
+i_data[0] => ram.DATAIN
+i_data[1] => ram~4.DATAIN
+i_data[1] => ram.DATAIN1
+i_data[2] => ram~3.DATAIN
+i_data[2] => ram.DATAIN2
+i_data[3] => ram~2.DATAIN
+i_data[3] => ram.DATAIN3
+i_we => ram~6.CLK
+i_we => ram~0.CLK
+i_we => ram~1.CLK
+i_we => ram~2.CLK
+i_we => ram~3.CLK
+i_we => ram~4.CLK
+i_we => ram~5.CLK
+i_we => ram.CLK0
+o_data[0] <= ram.DATAOUT
+o_data[1] <= ram.DATAOUT1
+o_data[2] <= ram.DATAOUT2
+o_data[3] <= ram.DATAOUT3
+
+

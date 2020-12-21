@@ -1,0 +1,59 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY MICROCONTROLADOR IS
+	GENERIC(
+
+	);
+	PORT(
+		I_CLK	: IN  STD_LOGIC;
+		I_RST	: IN  STD_LOGIC;
+	);
+END ENTITY;
+
+ARCHITECTURE BEHAVIORAL OF MICROCONTROLADOR IS
+
+	component CAMINHO_DADOS is
+		Generic(
+			p_DATA	: integer := 8
+		);
+		Port ( 
+			i_CLK			: in  STD_LOGIC;
+			i_RST   		: in  STD_LOGIC;
+			i_WE			: in  STD_LOGIC_VECTOR(3 DOWNTO 0);
+			i_DATA		: in  STD_LOGIC_VECTOR(p_DATA-1 DOWNTO 0);
+			i_SEL_RS1	: in  STD_LOGIC_VECTOR(1 DOWNTO 0);
+			i_SEL_RS2	: in  STD_LOGIC_VECTOR(1 DOWNTO 0);
+			i_SEL_ULA   : IN  STD_LOGIC_VECTOR(2 downto 0);
+			i_SEL_IMED  : in  std_LOGIC;
+			i_EN_OUT    : IN  STD_LOGIC;
+			o_LED 		: out STD_LOGIC_VECTOR(p_DATA-1 DOWNTO 0)
+		);
+	end CAMINHO_DADOS;
+	
+	component CAMINHO_CONTROLE is
+		Generic(
+			p_DATA	: integer := 16
+		);
+		Port ( 
+			i_CLK			: in  STD_LOGIC;
+		   i_RST   		: in  STD_LOGIC;
+			-- =========== ACESSO A ROM ==================
+			o_ADDRES		: out STD_LOGIC_VECTOR(9 DOWNTO 0);
+			i_INST		: in  STD_LOGIC_VECTOR(p_DATA-1 DOWNTO 0);
+			--============ ACESSO AO CAMINHO DE DADOS ====
+			o_WE			: out STD_LOGIC_VECTOR(3 DOWNTO 0);
+			o_DATA		: out STD_LOGIC_VECTOR(p_DATA-1 DOWNTO 0);
+			o_SEL_RS1	: out STD_LOGIC_VECTOR(1 DOWNTO 0);
+			o_SEL_RS2	: out STD_LOGIC_VECTOR(1 DOWNTO 0);
+			o_SEL_ULA   : out STD_LOGIC_VECTOR(2 downto 0);
+			o_SEL_IMED  : out std_LOGIC;
+			o_EN_OUT    : out STD_LOGIC
+		);
+	end component;
+BEGIN
+
+END ARCHITECTURE;

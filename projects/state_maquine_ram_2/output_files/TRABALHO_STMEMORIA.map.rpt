@@ -1,0 +1,498 @@
+Analysis & Synthesis report for TRABALHO_STMEMORIA
+Tue Oct 09 20:20:18 2018
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |TRABALHO_STMEMORIA|STMEMORIA:ST|STATE
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |TRABALHO_STMEMORIA
+ 14. Parameter Settings for User Entity Instance: MEMORIA:RAM
+ 15. Parameter Settings for User Entity Instance: LED_7SEG:LED
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Oct 09 20:20:18 2018      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; TRABALHO_STMEMORIA                         ;
+; Top-level Entity Name              ; TRABALHO_STMEMORIA                         ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; 289                                        ;
+;     Total combinational functions  ; 289                                        ;
+;     Dedicated logic registers      ; 3                                          ;
+; Total registers                    ; 3                                          ;
+; Total pins                         ; 21                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C16F484C6       ;                    ;
+; Top-level entity name                                                      ; TRABALHO_STMEMORIA ; TRABALHO_STMEMORIA ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
+; LED_7SEG.vhd                     ; yes             ; User VHDL File  ; D:/VHDL/projects/state_maquine_ram_2/LED_7SEG.vhd           ;         ;
+; TRABALHO_STMEMORIA.vhd           ; yes             ; User VHDL File  ; D:/VHDL/projects/state_maquine_ram_2/TRABALHO_STMEMORIA.vhd ;         ;
+; STMEMORIA.vhd                    ; yes             ; User VHDL File  ; D:/VHDL/projects/state_maquine_ram_2/STMEMORIA.vhd          ;         ;
+; MEMORIA.vhd                      ; yes             ; User VHDL File  ; D:/VHDL/projects/state_maquine_ram_2/MEMORIA.vhd            ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 289            ;
+;                                             ;                ;
+; Total combinational functions               ; 289            ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 114            ;
+;     -- 3 input functions                    ; 175            ;
+;     -- <=2 input functions                  ; 0              ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 289            ;
+;     -- arithmetic mode                      ; 0              ;
+;                                             ;                ;
+; Total registers                             ; 3              ;
+;     -- Dedicated logic registers            ; 3              ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 21             ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+; Maximum fan-out node                        ; I_ADD[2]~input ;
+; Maximum fan-out                             ; 46             ;
+; Total fan-out                               ; 1018           ;
+; Average fan-out                             ; 3.05           ;
++---------------------------------------------+----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; |TRABALHO_STMEMORIA        ; 289 (32)          ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |TRABALHO_STMEMORIA              ; work         ;
+;    |LED_7SEG:LED|          ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRABALHO_STMEMORIA|LED_7SEG:LED ; work         ;
+;    |MEMORIA:RAM|           ; 232 (232)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRABALHO_STMEMORIA|MEMORIA:RAM  ; work         ;
+;    |STMEMORIA:ST|          ; 4 (4)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TRABALHO_STMEMORIA|STMEMORIA:ST ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------+
+; State Machine - |TRABALHO_STMEMORIA|STMEMORIA:ST|STATE          ;
++----------------+---------------+----------------+---------------+
+; Name           ; STATE.ST_READ ; STATE.ST_WRITE ; STATE.ST_IDLE ;
++----------------+---------------+----------------+---------------+
+; STATE.ST_IDLE  ; 0             ; 0              ; 0             ;
+; STATE.ST_WRITE ; 0             ; 1              ; 1             ;
+; STATE.ST_READ  ; 1             ; 0              ; 1             ;
++----------------+---------------+----------------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                 ;
++------------------------------------------------------+---------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal ; Free of Timing Hazards ;
++------------------------------------------------------+---------------------+------------------------+
+; LED_7SEG:LED|O_LED7[0]                               ; GND                 ; yes                    ;
+; LED_7SEG:LED|O_LED7[1]                               ; GND                 ; yes                    ;
+; LED_7SEG:LED|O_LED7[2]                               ; GND                 ; yes                    ;
+; LED_7SEG:LED|O_LED7[3]                               ; GND                 ; yes                    ;
+; LED_7SEG:LED|O_LED7[4]                               ; GND                 ; yes                    ;
+; LED_7SEG:LED|O_LED7[5]                               ; GND                 ; yes                    ;
+; LED_7SEG:LED|O_LED7[6]                               ; GND                 ; yes                    ;
+; MEMORIA:RAM|O_DATA[3]                                ; STMEMORIA:ST|O_WE   ; yes                    ;
+; MEMORIA:RAM|O_DATA[1]                                ; STMEMORIA:ST|O_WE   ; yes                    ;
+; MEMORIA:RAM|O_DATA[2]                                ; STMEMORIA:ST|O_WE   ; yes                    ;
+; MEMORIA:RAM|O_DATA[0]                                ; STMEMORIA:ST|O_WE   ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~43                         ; rtl~0               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~39                         ; rtl~1               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~35                         ; rtl~2               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~47                         ; rtl~3               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~23                         ; rtl~4               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~27                         ; rtl~5               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~19                         ; rtl~6               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~31                         ; rtl~7               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~11                         ; rtl~8               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~7                          ; rtl~9               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~3                          ; rtl~10              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~15                         ; rtl~11              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~55                         ; rtl~12              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~59                         ; rtl~13              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~51                         ; rtl~14              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~63                         ; rtl~15              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~91                         ; rtl~16              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~107                        ; rtl~17              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~75                         ; rtl~18              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~123                        ; rtl~19              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~103                        ; rtl~20              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~87                         ; rtl~21              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~71                         ; rtl~22              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~119                        ; rtl~23              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~83                         ; rtl~24              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~99                         ; rtl~25              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~67                         ; rtl~26              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~115                        ; rtl~27              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~111                        ; rtl~28              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~95                         ; rtl~29              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~79                         ; rtl~30              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~127                        ; rtl~31              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~25                         ; rtl~5               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~21                         ; rtl~4               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~17                         ; rtl~6               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~29                         ; rtl~7               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~37                         ; rtl~1               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~41                         ; rtl~0               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~33                         ; rtl~2               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~45                         ; rtl~3               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~5                          ; rtl~9               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~9                          ; rtl~8               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~1                          ; rtl~10              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~13                         ; rtl~11              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~57                         ; rtl~13              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~53                         ; rtl~12              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~49                         ; rtl~14              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~61                         ; rtl~15              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~85                         ; rtl~21              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~101                        ; rtl~20              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~69                         ; rtl~22              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~117                        ; rtl~23              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~105                        ; rtl~17              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~89                         ; rtl~16              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~73                         ; rtl~18              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~121                        ; rtl~19              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~97                         ; rtl~25              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~81                         ; rtl~24              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~65                         ; rtl~26              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~113                        ; rtl~27              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~93                         ; rtl~29              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~109                        ; rtl~28              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~77                         ; rtl~30              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~125                        ; rtl~31              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~42                         ; rtl~0               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~38                         ; rtl~1               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~34                         ; rtl~2               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~46                         ; rtl~3               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~22                         ; rtl~4               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~26                         ; rtl~5               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~18                         ; rtl~6               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~30                         ; rtl~7               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~10                         ; rtl~8               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~6                          ; rtl~9               ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~2                          ; rtl~10              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~14                         ; rtl~11              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~54                         ; rtl~12              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~58                         ; rtl~13              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~50                         ; rtl~14              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~62                         ; rtl~15              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~90                         ; rtl~16              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~106                        ; rtl~17              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~74                         ; rtl~18              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~122                        ; rtl~19              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~102                        ; rtl~20              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~86                         ; rtl~21              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~70                         ; rtl~22              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~118                        ; rtl~23              ; yes                    ;
+; MEMORIA:RAM|W_MEMORIA_RAM~82                         ; rtl~24              ; yes                    ;
+; Number of user-specified and inferred latches = 139  ;                     ;                        ;
++------------------------------------------------------+---------------------+------------------------+
+Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; STMEMORIA:ST|STATE.ST_READ            ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 3     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 3     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |TRABALHO_STMEMORIA|STMEMORIA:ST|Selector2 ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |TRABALHO_STMEMORIA|LED_7SEG:LED|O_LED7[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |TRABALHO_STMEMORIA ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; DATA_LENGTH    ; 4     ; Signed Integer                                            ;
+; ADD_LENGTH     ; 5     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MEMORIA:RAM ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; data_length    ; 4     ; Signed Integer                  ;
+; add_length     ; 5     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LED_7SEG:LED ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; data_length    ; 4     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Tue Oct 09 20:20:15 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TRABALHO_STMEMORIA -c TRABALHO_STMEMORIA
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 2 design units, including 1 entities, in source file led_7seg.vhd
+    Info (12022): Found design unit 1: LED_7SEG-BEHAVIORAL
+    Info (12023): Found entity 1: LED_7SEG
+Info (12021): Found 2 design units, including 1 entities, in source file trabalho_stmemoria.vhd
+    Info (12022): Found design unit 1: TRABALHO_STMEMORIA-BEHAVIORAL
+    Info (12023): Found entity 1: TRABALHO_STMEMORIA
+Info (12021): Found 2 design units, including 1 entities, in source file stmemoria.vhd
+    Info (12022): Found design unit 1: STMEMORIA-BEHAVIORAL
+    Info (12023): Found entity 1: STMEMORIA
+Info (12021): Found 2 design units, including 1 entities, in source file memoria.vhd
+    Info (12022): Found design unit 1: MEMORIA-BEHAVIORAL
+    Info (12023): Found entity 1: MEMORIA
+Info (12021): Found 2 design units, including 1 entities, in source file tb_trabalho_stmemoria.vhd
+    Info (12022): Found design unit 1: TB_TRABALHO_STMEMORIA-BEHAVIORAL
+    Info (12023): Found entity 1: TB_TRABALHO_STMEMORIA
+Info (12127): Elaborating entity "TRABALHO_STMEMORIA" for the top level hierarchy
+Info (12128): Elaborating entity "STMEMORIA" for hierarchy "STMEMORIA:ST"
+Info (12128): Elaborating entity "MEMORIA" for hierarchy "MEMORIA:RAM"
+Warning (10492): VHDL Process Statement warning at MEMORIA.vhd(26): signal "I_WE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at MEMORIA.vhd(27): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at MEMORIA.vhd(27): signal "I_ADD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at MEMORIA.vhd(29): signal "W_MEMORIA_RAM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at MEMORIA.vhd(29): signal "I_ADD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at MEMORIA.vhd(24): inferring latch(es) for signal or variable "O_DATA", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "O_DATA[0]" at MEMORIA.vhd(24)
+Info (10041): Inferred latch for "O_DATA[1]" at MEMORIA.vhd(24)
+Info (10041): Inferred latch for "O_DATA[2]" at MEMORIA.vhd(24)
+Info (10041): Inferred latch for "O_DATA[3]" at MEMORIA.vhd(24)
+Info (12128): Elaborating entity "LED_7SEG" for hierarchy "LED_7SEG:LED"
+Warning (10492): VHDL Process Statement warning at LED_7SEG.vhd(22): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_7SEG.vhd(24): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_7SEG.vhd(26): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_7SEG.vhd(28): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_7SEG.vhd(30): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_7SEG.vhd(32): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_7SEG.vhd(34): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_7SEG.vhd(36): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_7SEG.vhd(38): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LED_7SEG.vhd(40): signal "I_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at LED_7SEG.vhd(20): inferring latch(es) for signal or variable "O_LED7", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "O_LED7[0]" at LED_7SEG.vhd(20)
+Info (10041): Inferred latch for "O_LED7[1]" at LED_7SEG.vhd(20)
+Info (10041): Inferred latch for "O_LED7[2]" at LED_7SEG.vhd(20)
+Info (10041): Inferred latch for "O_LED7[3]" at LED_7SEG.vhd(20)
+Info (10041): Inferred latch for "O_LED7[4]" at LED_7SEG.vhd(20)
+Info (10041): Inferred latch for "O_LED7[5]" at LED_7SEG.vhd(20)
+Info (10041): Inferred latch for "O_LED7[6]" at LED_7SEG.vhd(20)
+Info (10041): Inferred latch for "O_LED7[7]" at LED_7SEG.vhd(20)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "O_LED7[7]" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 310 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 289 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4705 megabytes
+    Info: Processing ended: Tue Oct 09 20:20:18 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+entity cronometro is
+	port(
+		i_clk 		: in std_logic;
+		i_rst			: in std_logic;
+		o_clock_4m	: out std_logic;
+	);
+end cronometro;
+
+architecture behavioral of cronometro i
+	
+begin
+
+end behavioral;

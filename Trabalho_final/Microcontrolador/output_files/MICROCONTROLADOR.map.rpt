@@ -1,0 +1,635 @@
+Analysis & Synthesis report for MICROCONTROLADOR
+Thu Nov 29 18:38:44 2018
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |MICROCONTROLADOR
+ 14. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados
+ 15. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00
+ 16. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0
+ 17. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1
+ 18. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2
+ 19. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3
+ 20. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|MULTIPLEXADOR:MUX1
+ 21. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|MULTIPLEXADOR:MUX2
+ 22. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|ULA:U01
+ 23. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|REGISTRADOR:u02
+ 24. Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|LED_7SEG:led
+ 25. Parameter Settings for User Entity Instance: CAMINHO_CONTROLE:controle
+ 26. Parameter Settings for User Entity Instance: ROM:rom_memorie
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Nov 29 18:38:43 2018      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; MICROCONTROLADOR                           ;
+; Top-level Entity Name              ; MICROCONTROLADOR                           ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; 101                                        ;
+;     Total combinational functions  ; 80                                         ;
+;     Dedicated logic registers      ; 55                                         ;
+; Total registers                    ; 55                                         ;
+; Total pins                         ; 44                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C16F484C6       ;                    ;
+; Top-level entity name                                                      ; MICROCONTROLADOR   ; MICROCONTROLADOR   ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; LED_7SEG.vhd                     ; yes             ; User VHDL File  ; D:/VHDL/Trabalho_final/Microcontrolador/LED_7SEG.vhd            ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File  ; D:/VHDL/Trabalho_final/Microcontrolador/ULA.vhd                 ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File  ; D:/VHDL/Trabalho_final/Microcontrolador/registrador.vhd         ;         ;
+; Multiplexador.vhd                ; yes             ; User VHDL File  ; D:/VHDL/Trabalho_final/Microcontrolador/Multiplexador.vhd       ;         ;
+; CAMINHO_DADOS.vhd                ; yes             ; User VHDL File  ; D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_DADOS.vhd       ;         ;
+; CAMINHO_CONTROLE.vhd             ; yes             ; User VHDL File  ; D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_CONTROLE.vhd    ;         ;
+; Banco_Registradores.vhd          ; yes             ; User VHDL File  ; D:/VHDL/Trabalho_final/Microcontrolador/Banco_Registradores.vhd ;         ;
+; MICROCONTROLADOR.vhd             ; yes             ; User VHDL File  ; D:/VHDL/Trabalho_final/Microcontrolador/MICROCONTROLADOR.vhd    ;         ;
+; ROM.vhd                          ; yes             ; User VHDL File  ; D:/VHDL/Trabalho_final/Microcontrolador/ROM.vhd                 ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 101         ;
+;                                             ;             ;
+; Total combinational functions               ; 80          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 57          ;
+;     -- 3 input functions                    ; 13          ;
+;     -- <=2 input functions                  ; 10          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 68          ;
+;     -- arithmetic mode                      ; 12          ;
+;                                             ;             ;
+; Total registers                             ; 55          ;
+;     -- Dedicated logic registers            ; 55          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 44          ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+; Maximum fan-out node                        ; I_CLK~input ;
+; Maximum fan-out                             ; 55          ;
+; Total fan-out                               ; 505         ;
+; Average fan-out                             ; 2.26        ;
++---------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                        ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Library Name ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+--------------+
+; |MICROCONTROLADOR               ; 80 (0)            ; 55 (0)       ; 0           ; 0            ; 0       ; 0         ; 44   ; 0            ; |MICROCONTROLADOR                                                             ; work         ;
+;    |CAMINHO_CONTROLE:controle|  ; 18 (18)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MICROCONTROLADOR|CAMINHO_CONTROLE:controle                                   ; work         ;
+;    |CAMINHO_DADOS:Dados|        ; 59 (0)            ; 40 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados                                         ; work         ;
+;       |BANCO_REGISTRADORES:U00| ; 17 (0)            ; 20 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00                 ; work         ;
+;          |REGISTRADOR:UR0|      ; 16 (16)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0 ; work         ;
+;          |REGISTRADOR:UR1|      ; 1 (1)             ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1 ; work         ;
+;       |LED_7SEG:led|            ; 0 (0)             ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|LED_7SEG:led                            ; work         ;
+;       |REGISTRADOR:u02|         ; 11 (11)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|REGISTRADOR:u02                         ; work         ;
+;       |ULA:U01|                 ; 31 (31)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|ULA:U01                                 ; work         ;
+;    |ROM:rom_memorie|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MICROCONTROLADOR|ROM:rom_memorie                                             ; work         ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                        ;
++------------------------------------------------------------------------+--------------------------------------------------+
+; Register name                                                          ; Reason for Removal                               ;
++------------------------------------------------------------------------+--------------------------------------------------+
+; CAMINHO_CONTROLE:controle|o_ADDRES[3]                                  ; Merged with CAMINHO_CONTROLE:controle|v_CONT[3]  ;
+; CAMINHO_CONTROLE:controle|o_ADDRES[2]                                  ; Merged with CAMINHO_CONTROLE:controle|v_CONT[2]  ;
+; CAMINHO_CONTROLE:controle|o_ADDRES[1]                                  ; Merged with CAMINHO_CONTROLE:controle|v_CONT[1]  ;
+; CAMINHO_CONTROLE:controle|o_ADDRES[0]                                  ; Merged with CAMINHO_CONTROLE:controle|v_CONT[0]  ;
+; CAMINHO_CONTROLE:controle|o_DATA[10..14]                               ; Merged with CAMINHO_CONTROLE:controle|o_DATA[15] ;
+; CAMINHO_CONTROLE:controle|o_DATA[4,5,7..9,15]                          ; Stuck at GND due to stuck port data_in           ;
+; CAMINHO_CONTROLE:controle|o_SEL_RS1[1]                                 ; Stuck at GND due to stuck port data_in           ;
+; CAMINHO_CONTROLE:controle|o_SEL_RS2[1]                                 ; Stuck at GND due to stuck port data_in           ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[0]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[0]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[1]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[1]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[2]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[2]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[3]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[3]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[4]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[4]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[5]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[5]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[6]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[6]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[7]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[7]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[8]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[8]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[9]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[9]  ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[10] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[10] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[11] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[11] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[12] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[12] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[13] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[13] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[14] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[14] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[15] ; Lost fanout                                      ;
+; CAMINHO_CONTROLE:controle|o_WE[2]                                      ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[15] ; Lost fanout                                      ;
+; CAMINHO_CONTROLE:controle|o_WE[3]                                      ; Lost fanout                                      ;
+; CAMINHO_CONTROLE:controle|o_SEL_ULA[2]                                 ; Stuck at GND due to stuck port data_in           ;
+; CAMINHO_CONTROLE:controle|o_SEL_RS1[0]                                 ; Stuck at GND due to stuck port data_in           ;
+; CAMINHO_CONTROLE:controle|o_DATA[1]                                    ; Merged with CAMINHO_CONTROLE:controle|o_DATA[0]  ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[10] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[10] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[11] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[11] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[12] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[12] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[13] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[13] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[14] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[14] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[15] ; Lost fanout                                      ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[15] ; Lost fanout                                      ;
+; CAMINHO_CONTROLE:controle|v_CONT[4..9]                                 ; Lost fanout                                      ;
+; CAMINHO_CONTROLE:controle|o_DATA[6]                                    ; Stuck at GND due to stuck port data_in           ;
+; Total Number of Removed Registers = 73                                 ;                                                  ;
++------------------------------------------------------------------------+--------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                 ;
++------------------------------------------------------------------------+---------------------------+------------------------------------------------------------------------+
+; Register name                                                          ; Reason for Removal        ; Registers Removed due to This Register                                 ;
++------------------------------------------------------------------------+---------------------------+------------------------------------------------------------------------+
+; CAMINHO_CONTROLE:controle|o_SEL_RS1[1]                                 ; Stuck at GND              ; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[1], ;
+;                                                                        ; due to stuck port data_in ; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[1], ;
+;                                                                        ;                           ; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[2]  ;
+; CAMINHO_CONTROLE:controle|o_DATA[4]                                    ; Stuck at GND              ; CAMINHO_CONTROLE:controle|o_WE[2], CAMINHO_CONTROLE:controle|o_WE[3]   ;
+;                                                                        ; due to stuck port data_in ;                                                                        ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[10] ; Lost Fanouts              ; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[10] ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[11] ; Lost Fanouts              ; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[11] ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[12] ; Lost Fanouts              ; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[12] ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[13] ; Lost Fanouts              ; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[13] ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[14] ; Lost Fanouts              ; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[14] ;
+; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[15] ; Lost Fanouts              ; CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[15] ;
++------------------------------------------------------------------------+---------------------------+------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 55    ;
+; Number of registers using Synchronous Clear  ; 1     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 15    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 39    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; CAMINHO_CONTROLE:controle|o_EN_OUT     ; 3       ;
+; CAMINHO_CONTROLE:controle|o_WE[0]      ; 2       ;
+; CAMINHO_CONTROLE:controle|o_WE[1]      ; 2       ;
+; Total number of inverted registers = 3 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|REGISTRADOR:u02|o_DATA[9]                          ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0|o_DATA[4]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1|o_DATA[14] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2|o_DATA[0]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3|o_DATA[14] ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 2 LEs                ; 8 LEs                  ; Yes        ; |MICROCONTROLADOR|CAMINHO_CONTROLE:controle|o_DATA[3]                                    ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 18 LEs               ; 12 LEs                 ; Yes        ; |MICROCONTROLADOR|CAMINHO_CONTROLE:controle|o_SEL_ULA[0]                                 ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |MICROCONTROLADOR|CAMINHO_CONTROLE:controle|o_DATA[0]                                    ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 2 LEs                ; 10 LEs                 ; Yes        ; |MICROCONTROLADOR|CAMINHO_CONTROLE:controle|o_WE[2]                                      ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|MULTIPLEXADOR:MUX1|Mux15   ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|MULTIPLEXADOR:MUX2|Mux5    ;
+; 6:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|ULA:U01|Mux13                                      ;
+; 7:1                ; 6 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |MICROCONTROLADOR|CAMINHO_DADOS:Dados|w_DATA[15]                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |MICROCONTROLADOR ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; p_DATA         ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; p_data         ; 16    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0 ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR1 ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR2 ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR3 ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|MULTIPLEXADOR:MUX1 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|MULTIPLEXADOR:MUX2 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|ULA:U01 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|REGISTRADOR:u02 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_DADOS:Dados|LED_7SEG:led ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CAMINHO_CONTROLE:controle ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; p_data         ; 16    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM:rom_memorie ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; p_data         ; 16    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Thu Nov 29 18:38:41 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MICROCONTROLADOR -c MICROCONTROLADOR
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 2 design units, including 1 entities, in source file led_7seg.vhd
+    Info (12022): Found design unit 1: LED_7SEG-BEHAVIORAL
+    Info (12023): Found entity 1: LED_7SEG
+Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
+    Info (12022): Found design unit 1: ULA-Behavioral
+    Info (12023): Found entity 1: ULA
+Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
+    Info (12022): Found design unit 1: REGISTRADOR-Behavioral
+    Info (12023): Found entity 1: REGISTRADOR
+Info (12021): Found 2 design units, including 1 entities, in source file multiplexador.vhd
+    Info (12022): Found design unit 1: MULTIPLEXADOR-Behavioral
+    Info (12023): Found entity 1: MULTIPLEXADOR
+Info (12021): Found 2 design units, including 1 entities, in source file caminho_dados.vhd
+    Info (12022): Found design unit 1: CAMINHO_DADOS-Behavioral
+    Info (12023): Found entity 1: CAMINHO_DADOS
+Info (12021): Found 2 design units, including 1 entities, in source file caminho_controle.vhd
+    Info (12022): Found design unit 1: CAMINHO_CONTROLE-Behavioral
+    Info (12023): Found entity 1: CAMINHO_CONTROLE
+Info (12021): Found 2 design units, including 1 entities, in source file banco_registradores.vhd
+    Info (12022): Found design unit 1: BANCO_REGISTRADORES-Behavioral
+    Info (12023): Found entity 1: BANCO_REGISTRADORES
+Info (12021): Found 2 design units, including 1 entities, in source file microcontrolador.vhd
+    Info (12022): Found design unit 1: MICROCONTROLADOR-BEHAVIORAL
+    Info (12023): Found entity 1: MICROCONTROLADOR
+Info (12021): Found 2 design units, including 1 entities, in source file rom.vhd
+    Info (12022): Found design unit 1: ROM-BEHAVIORAL
+    Info (12023): Found entity 1: ROM
+Info (12021): Found 2 design units, including 1 entities, in source file tb_microcontrolador.vhd
+    Info (12022): Found design unit 1: TB_MICROCONTROLADOR-BEHAVIORAL
+    Info (12023): Found entity 1: TB_MICROCONTROLADOR
+Info (12127): Elaborating entity "MICROCONTROLADOR" for the top level hierarchy
+Info (12128): Elaborating entity "CAMINHO_DADOS" for hierarchy "CAMINHO_DADOS:Dados"
+Info (12128): Elaborating entity "BANCO_REGISTRADORES" for hierarchy "CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00"
+Info (12128): Elaborating entity "REGISTRADOR" for hierarchy "CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|REGISTRADOR:UR0"
+Info (12128): Elaborating entity "MULTIPLEXADOR" for hierarchy "CAMINHO_DADOS:Dados|BANCO_REGISTRADORES:U00|MULTIPLEXADOR:MUX1"
+Info (12128): Elaborating entity "ULA" for hierarchy "CAMINHO_DADOS:Dados|ULA:U01"
+Warning (10540): VHDL Signal Declaration warning at ULA.vhd(19): used explicit default value for signal "w_ZERO" because signal was never assigned a value
+Warning (10492): VHDL Process Statement warning at ULA.vhd(45): signal "w_ZERO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "LED_7SEG" for hierarchy "CAMINHO_DADOS:Dados|LED_7SEG:led"
+Warning (10541): VHDL Signal Declaration warning at LED_7SEG.vhd(15): used implicit default value for signal "O_LED7" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "CAMINHO_CONTROLE" for hierarchy "CAMINHO_CONTROLE:controle"
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom_memorie"
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "ROM:rom_memorie|rom" is uninferred due to inappropriate RAM size
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "O_LED7[0]" is stuck at GND
+    Warning (13410): Pin "O_LED7[1]" is stuck at GND
+    Warning (13410): Pin "O_LED7[2]" is stuck at GND
+    Warning (13410): Pin "O_LED7[3]" is stuck at GND
+    Warning (13410): Pin "O_LED7[4]" is stuck at GND
+    Warning (13410): Pin "O_LED7[5]" is stuck at GND
+    Warning (13410): Pin "O_LED7[6]" is stuck at GND
+    Warning (13410): Pin "O_LED7[7]" is stuck at GND
+    Warning (13410): Pin "O_LED7[8]" is stuck at GND
+    Warning (13410): Pin "O_LED7[9]" is stuck at GND
+    Warning (13410): Pin "O_LED7[10]" is stuck at GND
+    Warning (13410): Pin "O_LED7[11]" is stuck at GND
+    Warning (13410): Pin "O_LED7[12]" is stuck at GND
+    Warning (13410): Pin "O_LED7[13]" is stuck at GND
+    Warning (13410): Pin "O_LED7[14]" is stuck at GND
+    Warning (13410): Pin "O_LED7[15]" is stuck at GND
+    Warning (13410): Pin "O_LED7[16]" is stuck at GND
+    Warning (13410): Pin "O_LED7[17]" is stuck at GND
+    Warning (13410): Pin "O_LED7[18]" is stuck at GND
+    Warning (13410): Pin "O_LED7[19]" is stuck at GND
+    Warning (13410): Pin "O_LED7[20]" is stuck at GND
+    Warning (13410): Pin "O_LED7[21]" is stuck at GND
+    Warning (13410): Pin "O_LED7[22]" is stuck at GND
+    Warning (13410): Pin "O_LED7[23]" is stuck at GND
+    Warning (13410): Pin "O_LED7[24]" is stuck at GND
+    Warning (13410): Pin "O_LED7[25]" is stuck at GND
+    Warning (13410): Pin "O_LED7[26]" is stuck at GND
+    Warning (13410): Pin "O_LED7[27]" is stuck at GND
+    Warning (13410): Pin "O_LED7[28]" is stuck at GND
+    Warning (13410): Pin "O_LED7[29]" is stuck at GND
+    Warning (13410): Pin "O_LED7[30]" is stuck at GND
+    Warning (13410): Pin "O_LED7[31]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 52 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 155 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 111 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Thu Nov 29 18:38:44 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

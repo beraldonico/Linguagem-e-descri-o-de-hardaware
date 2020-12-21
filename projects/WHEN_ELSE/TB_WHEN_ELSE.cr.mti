@@ -1,0 +1,46 @@
+{D:/nicol/햞ea de Trabalho/VHDL/projects/WHEN_ELSE/TB_WHEN_ELSE.vhd} {1 {vcom -work work -2002 -explicit {D:/nicol/햞ea de Trabalho/VHDL/projects/WHEN_ELSE/TB_WHEN_ELSE.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity TB_WHEN_ELSE
+-- Compiling architecture behavioral of TB_WHEN_ELSE
+
+} {} {}} {{D:/nicol/햞ea de Trabalho/VHDL/projects/WHEN_ELSE/TB_WHEN_ELSE.vhd}} {1 {vcom -work work -2002 -explicit {D:/nicol/햞ea de Trabalho/VHDL/projects/WHEN_ELSE/TB_WHEN_ELSE.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity TB_WHEN_ELSE
+-- Compiling architecture behavioral of TB_WHEN_ELSE
+** Warning: [4] D:/nicol/햞ea de Trabalho/VHDL/projects/WHEN_ELSE/TB_WHEN_ELSE.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/nicol/햞ea de Trabalho/VHDL/projects/WHEN_ELSE/WHEN_ELSE.vhd} {1 {vcom -work work -2002 -explicit {D:/nicol/햞ea de Trabalho/VHDL/projects/WHEN_ELSE/WHEN_ELSE.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity WHEN_ELSE
+-- Compiling architecture behavioral of WHEN_ELSE
+
+} {} {}} {{D:/nicol/햞ea de Trabalho/VHDL/projects/WHEN_ELSE/WHEN_ELSE.vhd}} {1 {vcom -work work -2002 -explicit {D:/nicol/햞ea de Trabalho/VHDL/projects/WHEN_ELSE/WHEN_ELSE.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity WHEN_ELSE
+-- Compiling architecture behavioral of WHEN_ELSE
+
+} {} {}}

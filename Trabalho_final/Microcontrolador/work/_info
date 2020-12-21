@@ -1,0 +1,401 @@
+m255
+K3
+13
+cModel Technology
+dD:\VHDL\projects\state_maquine_ram_2
+Ebanco_registradores
+Z0 w1540438468
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\VHDL\Trabalho_final\Microcontrolador
+Z6 8D:/VHDL/Trabalho_final/Microcontrolador/Banco_Registradores.vhd
+Z7 FD:/VHDL/Trabalho_final/Microcontrolador/Banco_Registradores.vhd
+l0
+L6
+VnPnXz0DK>0G2FF`2`@V`E0
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1543523886.047000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/Trabalho_final/Microcontrolador/Banco_Registradores.vhd|
+Z11 !s107 D:/VHDL/Trabalho_final/Microcontrolador/Banco_Registradores.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 XnE:VM8b?WcR8<Qo6_LnE1
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 19 banco_registradores 0 22 nPnXz0DK>0G2FF`2`@V`E0
+l57
+L22
+VQfhYQN;Q<4IagQc1QmIK_2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 jilEQ;XZ3McWW3On<l^;G1
+!i10b 1
+Ecaminho_controle
+Z14 w1543523879
+R1
+R2
+R3
+R4
+R5
+Z15 8D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_CONTROLE.vhd
+Z16 FD:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_CONTROLE.vhd
+l0
+L6
+VC6V4z_Y=_:lIg]lk;BJDK1
+R8
+32
+Z17 !s108 1543523886.447000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_CONTROLE.vhd|
+Z19 !s107 D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_CONTROLE.vhd|
+R12
+R13
+!s100 8iRaVZ`k3hLDfzIf5]<JP3
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 16 caminho_controle 0 22 C6V4z_Y=_:lIg]lk;BJDK1
+l32
+L27
+V?cno?ZfIXBjKo^l^ojzO[3
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 TTk8jheUKGGKTAnHI<QU@1
+!i10b 1
+Ecaminho_dados
+Z20 w1542719731
+R1
+R2
+R3
+R4
+R5
+Z21 8D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_DADOS.vhd
+Z22 FD:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_DADOS.vhd
+l0
+L6
+V3D<:BJQRO5o8nXjO0Cd9b3
+R8
+32
+Z23 !s108 1543523886.563000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_DADOS.vhd|
+Z25 !s107 D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_DADOS.vhd|
+R12
+R13
+!s100 WUbiidUUSLB]NZ_g]E^`A3
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 13 caminho_dados 0 22 3D<:BJQRO5o8nXjO0Cd9b3
+l89
+L26
+Vf>=nYEVfWj7DXJB<DIY0l0
+R8
+32
+R23
+R24
+R25
+R12
+R13
+!s100 RaY<5M^lkm8^kNU?1Poj32
+!i10b 1
+Eled_7seg
+Z26 w1543516981
+R1
+R2
+R3
+R4
+R5
+Z27 8D:/VHDL/Trabalho_final/Microcontrolador/LED_7SEG.vhd
+Z28 FD:/VHDL/Trabalho_final/Microcontrolador/LED_7SEG.vhd
+l0
+L6
+Vhn68BlRVHhShP`JAK4X9K1
+R8
+32
+Z29 !s108 1543523886.726000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/Trabalho_final/Microcontrolador/LED_7SEG.vhd|
+Z31 !s107 D:/VHDL/Trabalho_final/Microcontrolador/LED_7SEG.vhd|
+R12
+R13
+!s100 FSPzH?=Jk<GQ6LMna8TAW2
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 8 led_7seg 0 22 hn68BlRVHhShP`JAK4X9K1
+l24
+L19
+Vl0XX[g`NfG=nDWaNXOPgK2
+R8
+32
+R29
+R30
+R31
+R12
+R13
+!s100 1gG;W`kjWRam[H6oeDIb?3
+!i10b 1
+Emicrocontrolador
+Z32 w1542719732
+Z33 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R1
+R3
+R4
+R5
+Z34 8D:/VHDL/Trabalho_final/Microcontrolador/MICROCONTROLADOR.vhd
+Z35 FD:/VHDL/Trabalho_final/Microcontrolador/MICROCONTROLADOR.vhd
+l0
+L7
+V^NcLc[]>I5izOiNOAmjFC3
+R8
+32
+Z36 !s108 1543523886.849000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/Trabalho_final/Microcontrolador/MICROCONTROLADOR.vhd|
+Z38 !s107 D:/VHDL/Trabalho_final/Microcontrolador/MICROCONTROLADOR.vhd|
+R12
+R13
+!s100 @011c@TNgcbgJ]_^0WV?92
+!i10b 1
+Abehavioral
+R33
+R2
+R1
+R3
+R4
+DEx4 work 16 microcontrolador 0 22 ^NcLc[]>I5izOiNOAmjFC3
+l81
+L19
+VMgoLJQfold19ba?Fobn6P1
+R8
+32
+R36
+R37
+R38
+R12
+R13
+!s100 TzB7L?`YhI3R8jToB]jlJ0
+!i10b 1
+Emultiplexador
+Z39 w1540437444
+R1
+R2
+R3
+R4
+R5
+Z40 8D:/VHDL/Trabalho_final/Microcontrolador/Multiplexador.vhd
+Z41 FD:/VHDL/Trabalho_final/Microcontrolador/Multiplexador.vhd
+l0
+L6
+V6OBkIhEemA0m@NBTYokVP3
+R8
+32
+Z42 !s108 1543523886.980000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/Trabalho_final/Microcontrolador/Multiplexador.vhd|
+Z44 !s107 D:/VHDL/Trabalho_final/Microcontrolador/Multiplexador.vhd|
+R12
+R13
+!s100 XU04bP]g8J^Jo8JMhYJKI3
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 13 multiplexador 0 22 6OBkIhEemA0m@NBTYokVP3
+l22
+L20
+VbZ47:B<CM<ZgG^:cnQ[G71
+R8
+32
+R42
+R43
+R44
+R12
+R13
+!s100 lLLom@J35FeG[kbjzmU6A0
+!i10b 1
+Eregistrador
+Z45 w1540437396
+R1
+R2
+R3
+R4
+R5
+Z46 8D:/VHDL/Trabalho_final/Microcontrolador/registrador.vhd
+Z47 FD:/VHDL/Trabalho_final/Microcontrolador/registrador.vhd
+l0
+L6
+V4YAV_ffXBBj5jIUn>cI3c3
+R8
+32
+Z48 !s108 1543523887.112000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/Trabalho_final/Microcontrolador/registrador.vhd|
+Z50 !s107 D:/VHDL/Trabalho_final/Microcontrolador/registrador.vhd|
+R12
+R13
+!s100 mEN3?<hnT^?A;44S:afZ92
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 11 registrador 0 22 4YAV_ffXBBj5jIUn>cI3c3
+l21
+L19
+Vg4=ROhCf=cz;PAM@=8oR=3
+R8
+32
+R48
+R49
+R50
+R12
+R13
+!s100 K8WciT?L5M@9SjgR@l_5T3
+!i10b 1
+Erom
+Z51 w1543523016
+R33
+R2
+R1
+R3
+R4
+R5
+Z52 8D:/VHDL/Trabalho_final/Microcontrolador/ROM.vhd
+Z53 FD:/VHDL/Trabalho_final/Microcontrolador/ROM.vhd
+l0
+L7
+VbEI?ZNmbQQaVZZQR7S[B[2
+R8
+32
+Z54 !s108 1543523887.227000
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/Trabalho_final/Microcontrolador/ROM.vhd|
+Z56 !s107 D:/VHDL/Trabalho_final/Microcontrolador/ROM.vhd|
+R12
+R13
+!s100 b[OaCzjA8fVFFUdOoTkB[3
+!i10b 1
+Abehavioral
+R33
+R2
+R1
+R3
+R4
+DEx4 work 3 rom 0 22 bEI?ZNmbQQaVZZQR7S[B[2
+l42
+L17
+VaM:jW8F=n`FK>WAKj<oM72
+!s100 K]3Um?3=aU=mGX2JY8eJb3
+R8
+32
+R54
+R55
+R56
+R12
+R13
+!i10b 1
+Etb_microcontrolador
+Z57 w1543523257
+R33
+R2
+R1
+R3
+R4
+R5
+Z58 8D:/VHDL/Trabalho_final/Microcontrolador/TB_MICROCONTROLADOR.vhd
+Z59 FD:/VHDL/Trabalho_final/Microcontrolador/TB_MICROCONTROLADOR.vhd
+l0
+L7
+V9EAF7V0BGYGQ<5S;BR8aM3
+R8
+32
+Z60 !s108 1543523885.924000
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/Trabalho_final/Microcontrolador/TB_MICROCONTROLADOR.vhd|
+Z62 !s107 D:/VHDL/Trabalho_final/Microcontrolador/TB_MICROCONTROLADOR.vhd|
+R12
+R13
+!s100 ;Uo42iQf?ZAN4iRg`m3W_0
+!i10b 1
+Abehavioral
+R33
+R2
+R1
+R3
+R4
+DEx4 work 19 tb_microcontrolador 0 22 9EAF7V0BGYGQ<5S;BR8aM3
+l89
+L11
+Vkh?D2dXoD8@DfUBnGEE^R2
+R8
+32
+R60
+R61
+R62
+R12
+R13
+!s100 oI18:ECnE0W=hH<Z6T^ke2
+!i10b 1
+Eula
+Z63 w1540437319
+R1
+R2
+R3
+R4
+R5
+Z64 8D:/VHDL/Trabalho_final/Microcontrolador/ULA.vhd
+Z65 FD:/VHDL/Trabalho_final/Microcontrolador/ULA.vhd
+l0
+L6
+V?@k]KYMTK5MU^UgiPFK^]3
+!s100 Ne2BZ=h][4LDz;7ZbAJ?61
+R8
+32
+!i10b 1
+Z66 !s108 1543523887.350000
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/Trabalho_final/Microcontrolador/ULA.vhd|
+Z68 !s107 D:/VHDL/Trabalho_final/Microcontrolador/ULA.vhd|
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+R4
+Z69 DEx4 work 3 ula 0 22 ?@k]KYMTK5MU^UgiPFK^]3
+l21
+L18
+Z70 V68]c]Tdk=Mgl@f=FbAO6H2
+Z71 !s100 BMdzAeoN1W0>YXF?I_omI1
+R8
+32
+!i10b 1
+R66
+R67
+R68
+R12
+R13

@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+entity WHEN_ELSE is
+	port(
+			i_A : in std_logic_vector(1 downto 0);
+			i_B : out std_logic_vector(3 downto 0)			
+	);
+END WHEN_ELSE;
+
+architecture behavioral of WHEN_ELSE is
+
+begin
+		b <= 	"1000" when (i_A = "00") else
+				"0100" when (i_A = "01") else
+				"0010" when (i_A = "10") else
+				"0001" when (i_A = "11");
+				
+end behavioral;

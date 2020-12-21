@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+
+entity Multiplicador_4x4 IS
+	
+END Multiplicador_4x4;
+
+architecture behavioral of Multiplicador_4x4 is
+
+	
+	
+begin
+--================================================================
+	
+	--=============================================================
+end behavioral;

@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+
+entity TB_SOMADOR_4BITS IS
+	
+END TB_SOMADOR_4BITS;
+
+architecture behavioral of TB_SOMADOR_4BITS is
+
+begin
+	
+end behavioral;

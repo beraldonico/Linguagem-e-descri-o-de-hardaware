@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="pll_block">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_block|gerador_clock:gerador_clock_inst|altpll:altpll_component" CBX_FILE_NAME="gerador_clock_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

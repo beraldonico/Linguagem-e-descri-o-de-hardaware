@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity adder_4bit IS
+	PORT(
+		i_A	: in std_logic_vector(3 downto 0);
+		i_B	: in std_logic_vector(3 downto 0)
+		i_C	: in std_logic;
+		o_S	: out std_logic_vector(3 downto 0)
+		o_C	: out std_logic
+	);
+end adder_4bit;
+
+architecture behavioral of adder_4bit is
+	
+
+begin
+	
+end behavioral;

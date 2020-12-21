@@ -1,0 +1,7 @@
+set_global_assignment -name IP_TOOL_NAME "ALTPLL"
+set_global_assignment -name IP_TOOL_VERSION "13.1"
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "gerador_clock.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "gerador_clock_inst.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "gerador_clock.cmp"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "gerador_clock.ppf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "gerador_clock_syn.v"]

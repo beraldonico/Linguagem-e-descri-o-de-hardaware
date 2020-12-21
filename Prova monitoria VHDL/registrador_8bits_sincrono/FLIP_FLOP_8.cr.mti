@@ -1,0 +1,23 @@
+{D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/TB_FLIP_FLOP_8.VHD} {1 {vcom -work work -2002 -explicit {D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/TB_FLIP_FLOP_8.VHD}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity TB_FLIP_FLOP_8
+-- Compiling architecture BEHAVIORAL of TB_FLIP_FLOP_8
+
+} {} {}} {D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/REGISTRADOR_8_BITS_SINCRONO.vhd} {1 {vcom -work work -2002 -explicit {D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/REGISTRADOR_8_BITS_SINCRONO.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity FLIP_FLOP_8
+-- Compiling architecture BEHAVIORAL of FLIP_FLOP_8
+
+} {} {}}

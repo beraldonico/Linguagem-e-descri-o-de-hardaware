@@ -1,0 +1,93 @@
+D:/VHDL/Trabalho_final/Microcontrolador/MICROCONTROLADOR.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/Trabalho_final/Microcontrolador/MICROCONTROLADOR.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity MICROCONTROLADOR
+-- Compiling architecture BEHAVIORAL of MICROCONTROLADOR
+
+} {} {}} D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_DADOS.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_DADOS.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity CAMINHO_DADOS
+-- Compiling architecture Behavioral of CAMINHO_DADOS
+
+} {} {}} D:/VHDL/Trabalho_final/Microcontrolador/TB_MICROCONTROLADOR.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/Trabalho_final/Microcontrolador/TB_MICROCONTROLADOR.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity TB_MICROCONTROLADOR
+-- Compiling architecture BEHAVIORAL of TB_MICROCONTROLADOR
+
+} {} {}} D:/VHDL/Trabalho_final/Microcontrolador/LED_7SEG.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/Trabalho_final/Microcontrolador/LED_7SEG.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity LED_7SEG
+-- Compiling architecture BEHAVIORAL of LED_7SEG
+
+} {} {}} D:/VHDL/Trabalho_final/Microcontrolador/Multiplexador.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/Trabalho_final/Microcontrolador/Multiplexador.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MULTIPLEXADOR
+-- Compiling architecture Behavioral of MULTIPLEXADOR
+
+} {} {}} D:/VHDL/Trabalho_final/Microcontrolador/registrador.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/Trabalho_final/Microcontrolador/registrador.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity REGISTRADOR
+-- Compiling architecture Behavioral of REGISTRADOR
+
+} {} {}} D:/VHDL/Trabalho_final/Microcontrolador/ULA.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/Trabalho_final/Microcontrolador/ULA.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ULA
+-- Compiling architecture Behavioral of ULA
+
+} {} {}} D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_CONTROLE.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/Trabalho_final/Microcontrolador/CAMINHO_CONTROLE.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity CAMINHO_CONTROLE
+-- Compiling architecture Behavioral of CAMINHO_CONTROLE
+
+} {} {}} D:/VHDL/Trabalho_final/Microcontrolador/Banco_Registradores.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/Trabalho_final/Microcontrolador/Banco_Registradores.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity BANCO_REGISTRADORES
+-- Compiling architecture Behavioral of BANCO_REGISTRADORES
+
+} {} {}}

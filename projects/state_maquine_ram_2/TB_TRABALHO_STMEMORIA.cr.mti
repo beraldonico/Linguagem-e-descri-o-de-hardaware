@@ -1,0 +1,51 @@
+D:/VHDL/projects/state_maquine_ram_2/TB_TRABALHO_STMEMORIA.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/projects/state_maquine_ram_2/TB_TRABALHO_STMEMORIA.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity TB_TRABALHO_STMEMORIA
+-- Compiling architecture BEHAVIORAL of TB_TRABALHO_STMEMORIA
+
+} {} {}} D:/VHDL/projects/state_maquine_ram_2/LED_7SEG.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/projects/state_maquine_ram_2/LED_7SEG.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity LED_7SEG
+-- Compiling architecture BEHAVIORAL of LED_7SEG
+
+} {} {}} D:/VHDL/projects/state_maquine_ram_2/MEMORIA.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/projects/state_maquine_ram_2/MEMORIA.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MEMORIA
+-- Compiling architecture BEHAVIORAL of MEMORIA
+
+} {} {}} D:/VHDL/projects/state_maquine_ram_2/TRABALHO_STMEMORIA.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/projects/state_maquine_ram_2/TRABALHO_STMEMORIA.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity TRABALHO_STMEMORIA
+-- Compiling architecture BEHAVIORAL of TRABALHO_STMEMORIA
+
+} {} {}} D:/VHDL/projects/state_maquine_ram_2/STMEMORIA.vhd {1 {vcom -work work -2002 -explicit D:/VHDL/projects/state_maquine_ram_2/STMEMORIA.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity STMEMORIA
+-- Compiling architecture BEHAVIORAL of STMEMORIA
+
+} {} {}}

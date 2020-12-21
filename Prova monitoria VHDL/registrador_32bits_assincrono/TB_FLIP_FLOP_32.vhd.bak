@@ -1,0 +1,37 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY TB_FLIP_FLOP_32 IS
+	
+END ENTITY;
+
+ARCHITECTURE BEHAVIORAL OF TB_FLIP_FLOP_32 IS
+
+	
+	
+BEGIN
+
+	TB : FLIP_FLOP_32
+		generic map(
+			p_DATA 	=> 16
+		)
+		PORT map(
+			I_CLK		=> w_clk,
+			I_RST		=> w_rst,
+			o_LED		=> w_lED,
+			o_lED7	=> w_led7
+		);
+	
+	process
+	begin
+		w_clk <= '0';
+		w_rst <= '1';
+		wait for 10 ms;
+		
+		wait;
+	end process;
+	
+END ARCHITECTURE;

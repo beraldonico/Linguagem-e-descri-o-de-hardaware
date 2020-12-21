@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, /home/nicolas/Desktop/VHDL/projects/HALF_ADDER/HALF_ADDER.vhd
+source_file = 1, /home/nicolas/Desktop/VHDL/projects/FULL_ADDER/FULL_ADDER.vhd
+source_file = 1, /home/nicolas/Desktop/VHDL/projects/FULL_ADDER/db/FULL_ADDER.cbx.xml
+source_file = 1, /home/nicolas/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /home/nicolas/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /home/nicolas/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /home/nicolas/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = FULL_ADDER
+instance = comp, \o_S~output\, o_S~output, FULL_ADDER, 1
+instance = comp, \o_C~output\, o_C~output, FULL_ADDER, 1
+instance = comp, \i_B~input\, i_B~input, FULL_ADDER, 1
+instance = comp, \i_C~input\, i_C~input, FULL_ADDER, 1
+instance = comp, \i_A~input\, i_A~input, FULL_ADDER, 1
+instance = comp, \U01|o_S\, U01|o_S, FULL_ADDER, 1
+instance = comp, \o_C~0\, o_C~0, FULL_ADDER, 1

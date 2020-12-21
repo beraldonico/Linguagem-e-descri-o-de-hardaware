@@ -1,0 +1,128 @@
+m255
+K3
+13
+cModel Technology
+dD:\altera\13.1
+Eflip_flop_8
+Z0 w1552602928
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dD:\Users\nicol\Desktop\Prova monitoria VHDL\registrador_8bits_sincrono
+Z7 8D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/REGISTRADOR_8_BITS_SINCRONO.vhd
+Z8 FD:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/REGISTRADOR_8_BITS_SINCRONO.vhd
+l0
+L7
+V6Y558D8lI=V7I0J7?2?bd2
+Z9 OV;C;10.1d;51
+32
+Z10 !s108 1552605430.078000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/REGISTRADOR_8_BITS_SINCRONO.vhd|
+Z12 !s107 D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/REGISTRADOR_8_BITS_SINCRONO.vhd|
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
+!s100 9ObQeojkXe<JWb`04>77G0
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+DEx4 work 11 flip_flop_8 0 22 6Y558D8lI=V7I0J7?2?bd2
+l22
+L20
+VL1kc<>531?=@eg;7nb3mO2
+!s100 fg356^k_<HSoDN[J<8od42
+R9
+32
+R10
+R11
+R12
+R13
+R14
+!i10b 1
+Etb_flip_flop_32
+Z15 w1552604337
+R1
+R2
+R3
+R4
+R5
+R6
+Z16 8D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/TB_FLIP_FLOP_8.VHD
+Z17 FD:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/TB_FLIP_FLOP_8.VHD
+l0
+L7
+VEGH01A1GfTGF^?ez]g1oa3
+R9
+32
+Z18 !s108 1552604642.426000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/TB_FLIP_FLOP_8.VHD|
+Z20 !s107 D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/TB_FLIP_FLOP_8.VHD|
+R13
+R14
+!s100 WMG5P9LnFRHADCRJ^CdX[2
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+DEx4 work 15 tb_flip_flop_32 0 22 EGH01A1GfTGF^?ez]g1oa3
+l30
+L11
+Vnm9OlY;6L<jBYn1gTUo292
+R9
+32
+R18
+R19
+R20
+R13
+R14
+!s100 gYH^VmNM2J@G]^>foDlXh0
+!i10b 1
+Etb_flip_flop_8
+Z21 w1552605032
+R1
+R2
+R3
+R4
+R5
+R6
+R16
+R17
+l0
+L7
+VnoaZzJ?e?9IRdP88T^BIY3
+!s100 cUJ9zRP6Ae`o9=RVTjJLZ3
+R9
+32
+!i10b 1
+Z22 !s108 1552605430.262000
+R19
+Z23 !s107 D:/Users/nicol/Desktop/Prova monitoria VHDL/registrador_8bits_sincrono/TB_FLIP_FLOP_8.VHD|
+R13
+R14
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+Z24 DEx4 work 14 tb_flip_flop_8 0 22 noaZzJ?e?9IRdP88T^BIY3
+l30
+L11
+Z25 V<^G]LSz<EVRTD^h?;[;4=0
+Z26 !s100 l^49DHSP_2G[FZgJzK?eC3
+R9
+32
+!i10b 1
+R22
+R19
+R23
+R13
+R14

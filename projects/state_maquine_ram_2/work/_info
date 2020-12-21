@@ -1,0 +1,217 @@
+m255
+K3
+13
+cModel Technology
+dD:\Altera
+Eled_7seg
+Z0 w1539127191
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\VHDL\projects\state_maquine_ram_2
+Z6 8D:/VHDL/projects/state_maquine_ram_2/LED_7SEG.vhd
+Z7 FD:/VHDL/projects/state_maquine_ram_2/LED_7SEG.vhd
+l0
+L6
+VZ<mUj@z78X<nVQ<m;?QzB2
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1539127296.397000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/projects/state_maquine_ram_2/LED_7SEG.vhd|
+Z11 !s107 D:/VHDL/projects/state_maquine_ram_2/LED_7SEG.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 D9iJd8L9zX[3h>P=nf<D33
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 8 led_7seg 0 22 Z<mUj@z78X<nVQ<m;?QzB2
+l19
+L17
+VHf:7<k2:8D>MKP?b8O5[k0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 GMQ68UhCbIJ>azTK_;`Fi1
+!i10b 1
+Ememoria
+Z14 w1539127192
+R1
+R2
+R3
+R4
+R5
+Z15 8D:/VHDL/projects/state_maquine_ram_2/MEMORIA.vhd
+Z16 FD:/VHDL/projects/state_maquine_ram_2/MEMORIA.vhd
+l0
+L6
+VP2zi41ZmWO;632=NTJgzX2
+R8
+32
+Z17 !s108 1539127296.520000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/projects/state_maquine_ram_2/MEMORIA.vhd|
+Z19 !s107 D:/VHDL/projects/state_maquine_ram_2/MEMORIA.vhd|
+R12
+R13
+!s100 PN:F[hNnQ;A0XM[0fPTKi3
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 7 memoria 0 22 P2zi41ZmWO;632=NTJgzX2
+l23
+L20
+VA1o7lE]]B1g`?YO=FHXI92
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 <e`>1RN6_LMzNfaILWK<<0
+!i10b 1
+Artl
+R3
+R4
+DEx4 work 7 memoria 0 22 42Uhobmf85S6gh8f]jgXK0
+l35
+L23
+VA1nKQ3@Q6Ybn7AfQ^c>lf1
+R8
+32
+R18
+R19
+R12
+R13
+w1537945347
+!s108 1537945358.205000
+!s100 2_27gTRP;9Whda]gVi7Vm3
+!i10b 1
+Estmemoria
+Z20 w1539127193
+R1
+R2
+R3
+R4
+R5
+Z21 8D:/VHDL/projects/state_maquine_ram_2/STMEMORIA.vhd
+Z22 FD:/VHDL/projects/state_maquine_ram_2/STMEMORIA.vhd
+l0
+L6
+VL_^Q<gc;oB?J7kD2o?FkE3
+R8
+32
+Z23 !s108 1539127296.630000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/projects/state_maquine_ram_2/STMEMORIA.vhd|
+Z25 !s107 D:/VHDL/projects/state_maquine_ram_2/STMEMORIA.vhd|
+R12
+R13
+!s100 VPf@Ad@AcLdgPDj_[ngO91
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 9 stmemoria 0 22 L_^Q<gc;oB?J7kD2o?FkE3
+l19
+L16
+V1ecN=ccPZJd<P6oC5Tcn23
+!s100 anl2:fX1Zna<5oMS4=Wh32
+R8
+32
+R23
+R24
+R25
+R12
+R13
+!i10b 1
+Etb_trabalho_stmemoria
+Z26 w1537946938
+R1
+R2
+R3
+R4
+R5
+Z27 8D:/VHDL/projects/state_maquine_ram_2/TB_TRABALHO_STMEMORIA.vhd
+Z28 FD:/VHDL/projects/state_maquine_ram_2/TB_TRABALHO_STMEMORIA.vhd
+l0
+L6
+Vo?=NBVG9GS4cDk:Y?4;FD2
+R8
+32
+Z29 !s108 1539127296.288000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/projects/state_maquine_ram_2/TB_TRABALHO_STMEMORIA.vhd|
+Z31 !s107 D:/VHDL/projects/state_maquine_ram_2/TB_TRABALHO_STMEMORIA.vhd|
+R12
+R13
+!s100 C`?7VFDDY9oegz7@ATO1@2
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 21 tb_trabalho_stmemoria 0 22 o?=NBVG9GS4cDk:Y?4;FD2
+l72
+L10
+Vem:9Ha?F5f5H5;W9kQ2:]2
+R8
+32
+R29
+R30
+R31
+R12
+R13
+!s100 jl4VWdH5RBMmfDdK:UBIJ0
+!i10b 1
+Etrabalho_stmemoria
+Z32 w1537946412
+R1
+R2
+R3
+R4
+R5
+Z33 8D:/VHDL/projects/state_maquine_ram_2/TRABALHO_STMEMORIA.vhd
+Z34 FD:/VHDL/projects/state_maquine_ram_2/TRABALHO_STMEMORIA.vhd
+l0
+L8
+Vh0KnH5`dji6:;R3hXgm[R3
+!s100 CINTziKBQcAz_Y[1=4HAm2
+R8
+32
+!i10b 1
+Z35 !s108 1539127296.743000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/VHDL/projects/state_maquine_ram_2/TRABALHO_STMEMORIA.vhd|
+Z37 !s107 D:/VHDL/projects/state_maquine_ram_2/TRABALHO_STMEMORIA.vhd|
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+R4
+Z38 DEx4 work 18 trabalho_stmemoria 0 22 h0KnH5`dji6:;R3hXgm[R3
+l62
+L24
+Z39 V3egkPLlBRQOm[R7omWcES2
+Z40 !s100 :YE?8OE5cRi088G<0<=zG2
+R8
+32
+!i10b 1
+R35
+R36
+R37
+R12
+R13

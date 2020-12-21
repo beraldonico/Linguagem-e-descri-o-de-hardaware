@@ -1,0 +1,36 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_arith.all;
+use IEEE.STD_LOGIC_unsigned.all;
+
+entity MEmoria is
+	Generic(
+		p_data_width	:Integer := 16; 	--numero de bits de dados
+		p_add_width		: integer := 6		--numero de bits dos endereços
+	);
+	port(
+		i_clk		:in STD_LOGIC;
+		i_data	:in std_logic_vector((p_data_width-1) downto 0 );
+		i_we		:in STD_LOGIC;
+		i_addr	:in std_logic_vector((p_add_width-1) downto 0 );
+		i_addw	:in std_logic_vector((p_add_width-1) downto 0 );
+		o_data	:out std_logic_vector((p_data_width-1) downto 0 )
+	);
+end memoria;
+
+architecture behavioral of memoria is
+	type mem_type is array(i_addr'range) of std_logic_vector(i_data'range);
+	signal w_memoria_ram : mem_type;
+	
+begin
+	-- process de escritura
+	process(i_clk)begin
+		if rising_edge(i_clk) then 
+			if(i_we = '1') then
+				w_memoria_ram(conv_integer(i_addr)) <= i_data;
+			end if;		
+			o_data <= w_memoria_ram(conv_integer(i_addr));
+		end if;
+	end process;
+end behavioral;
+	

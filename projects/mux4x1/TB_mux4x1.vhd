@@ -1,0 +1,58 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+entity TB_mux4x1 is
+	
+END TB_mux4x1 ;
+
+architecture behavioral of TB_mux4x1  is
+
+	component mux4x1 is
+		port(
+			i_a	: in std_logic_vector(7 downto 0);
+			i_b	: in std_logic_vector(7 downto 0);
+			i_c	: in std_logic_vector(7 downto 0);
+			i_d	: in std_logic_vector(7 downto 0);
+			o_s	: out std_logic_vector(7 downto 0);
+			i_sel	: in std_logic_vector(1 downto 0)
+		);
+	end component;
+	
+	signal w_a		: std_logic_vector(7 downto 0);
+	signal w_b		: std_logic_vector(7 downto 0);
+	signal w_c		: std_logic_vector(7 downto 0);
+	signal w_d		: std_logic_vector(7 downto 0);
+	signal w_s		: std_logic_vector(7 downto 0);
+	signal w_sel	: std_logic_vector(1 downto 0);
+	
+begin
+	UUT: mux4x1 
+		port map(
+			i_a	=> w_a	,
+			i_b	=> w_b	,
+			i_c	=> w_c	,
+			i_d	=> w_d	,
+			o_s	=> w_s	,
+			i_sel	=> w_sel
+		);
+		
+	process
+	begin
+		w_a <= x"AA";
+		w_b <= x"BB";
+		w_c <= x"CC";
+		w_d <= x"DD";
+		
+		w_sel <= "00";
+		wait for 100 NS;
+		w_sel <= "01";
+		wait for 100 NS;
+		w_sel <= "10";
+		wait for 100 NS;
+		w_sel <= "11";
+		wait;
+	END process;
+end behavioral;

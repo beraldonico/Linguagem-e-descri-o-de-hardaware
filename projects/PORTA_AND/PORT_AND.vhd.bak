@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use std_logic_arith.all;
+
+entity PORTA_AND is
+
+	PORT(
+		A	: IN std_logic;
+		B	: in STD_logic;
+		C	: OUT std_logic
+	);
+END PORTA_AND;
+
+ARCHITECTURE behavioral of porTA_AND is
+
+
+BEGIN
+
+	C <= A and B;
+END behavioral;
